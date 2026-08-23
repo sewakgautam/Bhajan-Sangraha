@@ -91,6 +91,15 @@ class _AppBootstrapState extends State<_AppBootstrap> {
     // necessary — total splash time is max(init time, 2s), not init time + 2s.
     final minSplashDuration = Future<void>.delayed(const Duration(seconds: 2));
 
+    // ThemeController and LocaleController read Hive synchronously the
+    // instant BhajanSangrahaApp first builds (see below), so Hive must be
+    // ready before anything else runs — kept outside the try block below so
+    // an unrelated failure there (flaky network on the update check or
+    // Firestore) can never leave it uninitialized and take the whole app
+    // down with it.
+    await HiveService.instance.init();
+    await HiveService.instance.migrateBookmarksIfNeeded();
+
     try {
       await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
       // Routes framework errors (widget build/layout/paint) to Crashlytics
@@ -114,8 +123,6 @@ class _AppBootstrapState extends State<_AppBootstrap> {
       }
 
       unawaited(AdService.instance.initialize());
-      await HiveService.instance.init();
-      await HiveService.instance.migrateBookmarksIfNeeded();
       await FestivalService.instance.loadFestivals();
       unawaited(NotificationService.instance.init());
 
@@ -140,11 +147,12 @@ class _AppBootstrapState extends State<_AppBootstrap> {
         _ready = true;
       });
     } catch (error, stack) {
-      // A failure anywhere above (corrupted Hive box, bad festivals.json,
-      // Firebase init failure, ...) used to leave the app stuck on the
-      // splash image forever with nothing recorded anywhere. Report it,
-      // then still let the user through — RootShell/SplashScreen already
-      // handle an empty or failed data state on their own.
+      // A failure anywhere above (bad festivals.json, Firebase init failure,
+      // a flaky network call, ...) used to leave the app stuck on the splash
+      // image forever with nothing recorded anywhere. Report it, then still
+      // let the user through — RootShell/SplashScreen already handle an
+      // empty or failed data state on their own. Hive itself is guaranteed
+      // ready by this point (initialized above, outside this try block).
       if (Firebase.apps.isNotEmpty) {
         FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
       }
