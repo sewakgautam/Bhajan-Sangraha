@@ -29,7 +29,8 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => const RootShell()),
       );
-    } catch (_) {
+    } catch (e) {
+      debugPrint('First-run sync failed: $e');
       if (!mounted) return;
       setState(() => _failed = true);
     }

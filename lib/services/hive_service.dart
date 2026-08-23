@@ -34,9 +34,24 @@ class HiveService {
     if (!Hive.isAdapterRegistered(1)) Hive.registerAdapter(CategoryAdapter());
     if (!Hive.isAdapterRegistered(2)) Hive.registerAdapter(BookmarkAdapter());
     if (!Hive.isAdapterRegistered(3)) Hive.registerAdapter(GitaQuoteAdapter());
-    _bhajansBox = await Hive.openBox<Bhajan>(bhajansBoxName);
-    _metaBox = await Hive.openBox(metaBoxName);
-    _bookmarksBox = await Hive.openBox<Bookmark>(bookmarksBoxName);
+    _bhajansBox = await _openBoxResilient<Bhajan>(bhajansBoxName);
+    _metaBox = await _openBoxResilient(metaBoxName);
+    _bookmarksBox = await _openBoxResilient<Bookmark>(bookmarksBoxName);
+  }
+
+  /// Opens [name], recreating it from scratch if the on-disk box can't be
+  /// read — e.g. left in a bad state by the OS killing the app mid-write, or
+  /// incompatible with the current Hive adapters after a model field change.
+  /// Bhajans/categories/festivals resync from the server either way; the
+  /// only real risk is losing local-only bookmarks, which is still far
+  /// better than every screen depending on Hive crashing on startup forever.
+  Future<Box<T>> _openBoxResilient<T>(String name) async {
+    try {
+      return await Hive.openBox<T>(name);
+    } catch (_) {
+      await Hive.deleteBoxFromDisk(name);
+      return Hive.openBox<T>(name);
+    }
   }
 
   bool get hasBhajans => _bhajansBox.isNotEmpty;
