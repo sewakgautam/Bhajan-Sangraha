@@ -1,0 +1,72 @@
+{
+  "@@locale": "en",
+  "appTitle": "Bhajan Sangraha",
+  "noBhajansYet": "No bhajans yet.",
+  "allCategory": "All",
+  "searchHint": "Search bhajans...",
+  "noResults": "No results.",
+  "viewModeDevanagari": "Devanagari",
+  "viewModeRoman": "Roman",
+  "viewModeBoth": "Both",
+  "shareTooltip": "Share",
+  "bookmarkAdd": "Bookmark",
+  "bookmarkRemove": "Remove bookmark",
+  "bookmarkAdded": "Bookmark added",
+  "bookmarkRemoved": "Bookmark removed",
+  "sourceLabel": "Source",
+  "sourceBook": "Book:",
+  "sourceAuthor": "Author:",
+  "sourcePublisher": "Publisher:",
+  "sourceYear": "Year:",
+  "sourcePage": "Page:",
+  "signInToSync": "Sign in to sync your bookmarks across devices",
+  "signInToViewBookmarks": "Sign in to view and sync your bookmarks",
+  "signIn": "Sign In",
+  "signOut": "Sign Out",
+  "notSignedIn": "Not signed in",
+  "signOutConfirm": "Your bookmarks will remain on this device but will no longer sync. Continue?",
+  "cancel": "Cancel",
+  "signedInAndSynced": "Signed in as {name}. Bookmarks synced.",
+  "@signedInAndSynced": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "signInFailed": "Sign in failed. Try again.",
+  "noBookmarksYet": "No bookmarks yet. Tap ⭐ on any bhajan to save it here.",
+  "navHome": "Home",
+  "navBookmarks": "Bookmarks",
+  "navQuotes": "Gita",
+  "navSettings": "Settings",
+  "quotesScreenTitle": "Gita Quotes",
+  "noQuotesYet": "No quotes yet.",
+  "copyTooltip": "Copy",
+  "quoteCopied": "{chapterVerse} copied",
+  "@quoteCopied": {
+    "placeholders": {
+      "chapterVerse": {"type": "String"}
+    }
+  },
+  "fontSize": "Font size",
+  "theme": "Theme",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeSystem": "System",
+  "about": "About US",
+  "language": "Language",
+  "syncFailedMessage": "Could not load bhajans. Check your connection.",
+  "retry": "Retry",
+  "festivalGreeting": "Happy {festivalName}!",
+  "@festivalGreeting": {
+    "placeholders": {
+      "festivalName": {"type": "String"}
+    }
+  },
+  "festivalCta": "Tap to view {categoryName} bhajans",
+  "@festivalCta": {
+    "placeholders": {
+      "categoryName": {"type": "String"}
+    }
+  },
+  "watchOnYoutube": "Watch on YouTube"
+}

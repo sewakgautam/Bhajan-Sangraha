@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "881793891623",
+    "project_id": "bhajan-sangraha-pahadilabs",
+    "storage_bucket": "bhajan-sangraha-pahadilabs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881793891623:android:4b5d0eac155400061c7d02",
+        "android_client_info": {
+          "package_name": "com.pahadilabs.bhajan_sangraha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881793891623-fbsitjhot0e25f2r78kie8kdkvkin10k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pahadilabs.bhajan_sangraha",
+            "certificate_hash": "7aa1d00e5c5912d342d1e0c6cd505635fcaba69b"
+          }
+        },
+        {
+          "client_id": "881793891623-lnpk4v18fql9npm4q39g5j98lret4neu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pahadilabs.bhajan_sangraha",
+            "certificate_hash": "15a010d1b181468e4f46636a885beb61436823f3"
+          }
+        },
+        {
+          "client_id": "881793891623-9k74u2e4oprj01j2skt0b34cif0s931f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEuJFlIBUHXAjtx-11Iq2KWFZSsinDn94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881793891623-9k74u2e4oprj01j2skt0b34cif0s931f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": ["node_modules", ".git", "firebase-debug.log", "firebase-debug.*.log"]
+    }
+  ],
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bhajan-sangraha-pahadilabs",
+          "appId": "1:881793891623:android:4b5d0eac155400061c7d02",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bhajan-sangraha-pahadilabs",
+          "configurations": {
+            "android": "1:881793891623:android:4b5d0eac155400061c7d02"
+          }
+        }
+      }
+    }
+  }
+}

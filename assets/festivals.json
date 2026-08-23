@@ -1,0 +1,63 @@
+[
+  { "id": "new_year", "name_devanagari": "नयाँ वर्ष", "name_english": "Nepali New Year", "category": "national", "date": "2027-04-14" },
+  { "id": "ghode_jatra", "name_devanagari": "घोडेजात्रा", "name_english": "Ghode Jatra", "category": "national", "date": "2027-04-06" },
+
+  { "id": "chaite_dashain", "name_devanagari": "चैते दशैं", "name_english": "Chaite Dashain", "category": "devi" },
+  { "id": "ghatasthapana", "name_devanagari": "घटस्थापना", "name_english": "Ghatasthapana", "category": "devi", "date": "2026-10-11" },
+  { "id": "fulpati", "name_devanagari": "फूलपाती", "name_english": "Fulpati", "category": "devi", "date": "2026-10-17" },
+  { "id": "maha_astami", "name_devanagari": "महाअष्टमी", "name_english": "Maha Astami", "category": "devi", "date": "2026-10-18" },
+  { "id": "maha_navami", "name_devanagari": "महानवमी", "name_english": "Maha Navami", "category": "devi", "date": "2026-10-19" },
+  { "id": "vijaya_dashami", "name_devanagari": "विजया दशमी", "name_english": "Vijaya Dashami", "category": "devi", "date": "2026-10-20" },
+  { "id": "kojagrat_purnima", "name_devanagari": "कोजाग्रत पूर्णिमा", "name_english": "Kojagrat Purnima", "category": "devi", "date": "2026-10-24" },
+  { "id": "hartalika_teej", "name_devanagari": "हरितालिका तीज", "name_english": "Hartalika Teej", "category": "devi", "date": "2026-09-13" },
+  { "id": "kaag_tihar", "name_devanagari": "काग तिहार", "name_english": "Kaag Tihar", "category": "devi", "date": "2026-11-06" },
+  { "id": "kukur_tihar", "name_devanagari": "कुकुर तिहार", "name_english": "Kukur Tihar", "category": "devi", "date": "2026-11-07" },
+  { "id": "laxmi_puja", "name_devanagari": "लक्ष्मी पूजा", "name_english": "Laxmi Puja", "category": "devi", "date": "2026-11-08" },
+  { "id": "goru_tihar", "name_devanagari": "गोरु तिहार", "name_english": "Goru Tihar", "category": "devi", "date": "2026-11-09" },
+  { "id": "bhai_tika", "name_devanagari": "भाइटीका", "name_english": "Bhai Tika", "category": "devi", "date": "2026-11-10" },
+
+  { "id": "maha_shivaratri", "name_devanagari": "महाशिवरात्री", "name_english": "Maha Shivaratri", "category": "shiv", "date": "2027-03-06" },
+  { "id": "bala_chaturdashi", "name_devanagari": "बालाचतुर्दशी", "name_english": "Bala Chaturdashi", "category": "shiv" },
+  { "id": "shrawan_sombar_1", "name_devanagari": "श्रावण सोमवार", "name_english": "Shrawan Sombar", "category": "shiv", "date": "2026-07-20" },
+  { "id": "shrawan_sombar_2", "name_devanagari": "श्रावण सोमवार", "name_english": "Shrawan Sombar", "category": "shiv", "date": "2026-07-27" },
+  { "id": "shrawan_sombar_3", "name_devanagari": "श्रावण सोमवार", "name_english": "Shrawan Sombar", "category": "shiv", "date": "2026-08-03" },
+  { "id": "shrawan_sombar_4", "name_devanagari": "श्रावण सोमवार", "name_english": "Shrawan Sombar", "category": "shiv", "date": "2026-08-10" },
+
+  { "id": "ram_navami", "name_devanagari": "राम नवमी", "name_english": "Ram Navami", "category": "ram", "date": "2027-04-15" },
+
+  { "id": "hanuman_jayanti", "name_devanagari": "हनुमान जयन्ती", "name_english": "Hanuman Jayanti", "category": "hanuman", "date": "2027-04-20" },
+
+  { "id": "krishna_janmashtami", "name_devanagari": "कृष्ण जन्माष्टमी", "name_english": "Krishna Janmashtami", "category": "krishna", "date": "2026-09-03" },
+  { "id": "govardhan_puja", "name_devanagari": "गोवर्धन पूजा", "name_english": "Govardhan Puja", "category": "krishna", "date": "2026-11-09" },
+  { "id": "holi_hills", "name_devanagari": "फागु पूर्णिमा (पहाड)", "name_english": "Holi (Hills)", "category": "krishna", "date": "2027-03-21" },
+  { "id": "holi_terai", "name_devanagari": "फागु पूर्णिमा (तराई)", "name_english": "Holi (Terai)", "category": "krishna", "date": "2027-03-22" },
+
+  { "id": "ganesh_chaturthi", "name_devanagari": "गणेश चतुर्थी", "name_english": "Ganesh Chaturthi", "category": "ganesh", "date": "2026-09-14" },
+
+  { "id": "basanta_panchami", "name_devanagari": "वसन्त पञ्चमी", "name_english": "Saraswati Puja", "category": "saraswati", "date": "2027-02-11" },
+
+  { "id": "chhath", "name_devanagari": "छठ पर्व", "name_english": "Chhath", "category": "surya", "date": "2026-11-15" },
+
+  { "id": "janai_purnima", "name_devanagari": "जनै पूर्णिमा", "name_english": "Janai Purnima", "category": "hindu", "date": "2026-08-27" },
+  { "id": "raksha_bandhan", "name_devanagari": "रक्षाबन्धन", "name_english": "Raksha Bandhan", "category": "hindu", "date": "2026-08-27" },
+  { "id": "rishi_panchami", "name_devanagari": "ऋषि पञ्चमी", "name_english": "Rishi Panchami", "category": "hindu", "date": "2026-09-16" },
+  { "id": "pitri_paksha", "name_devanagari": "पितृ पक्ष", "name_english": "Pitri Paksha", "category": "hindu" },
+  { "id": "maghe_sankranti", "name_devanagari": "माघे सङ्क्रान्ति", "name_english": "Maghe Sankranti", "category": "hindu", "date": "2027-01-15" },
+  { "id": "ekadashi", "name_devanagari": "एकादशी", "name_english": "Ekadashi", "category": "hindu" },
+  { "id": "pradosh_vrat", "name_devanagari": "प्रदोष व्रत", "name_english": "Pradosh Vrat", "category": "hindu" },
+  { "id": "guru_purnima", "name_devanagari": "गुरु पूर्णिमा", "name_english": "Guru Purnima", "category": "hindu", "date": "2026-07-29" },
+
+  { "id": "mha_puja", "name_devanagari": "म्हः पूजा", "name_english": "Mha Puja", "category": "newar" },
+  { "id": "nepal_sambat", "name_devanagari": "नेपाल संवत् नयाँ वर्ष", "name_english": "Nepal Sambat New Year", "category": "newar" },
+  { "id": "yomari_punhi", "name_devanagari": "योमरी पुन्हि", "name_english": "Yomari Punhi", "category": "newar", "date": "2026-12-24" },
+  { "id": "ghyu_chaku_sanhu", "name_devanagari": "घ्यू चाकु सन्हु", "name_english": "Ghyu Chaku Sanhu", "category": "newar" },
+
+  { "id": "gai_jatra", "name_devanagari": "गाईजात्रा", "name_english": "Gai Jatra", "category": "cultural", "date": "2026-08-29" },
+  { "id": "indra_jatra", "name_devanagari": "इन्द्रजात्रा", "name_english": "Indra Jatra", "category": "cultural", "date": "2026-09-25" },
+
+  { "id": "buddha_jayanti", "name_devanagari": "बुद्ध जयन्ती", "name_english": "Buddha Jayanti", "category": "buddha", "date": "2027-05-20" },
+
+  { "id": "tamu_lhosar", "name_devanagari": "तमु ल्होसार", "name_english": "Tamu Lhosar", "category": "buddha", "date": "2026-12-30" },
+  { "id": "sonam_lhosar", "name_devanagari": "सोनाम ल्होसार", "name_english": "Sonam Lhosar", "category": "buddha", "date": "2027-02-07" },
+  { "id": "gyalpo_lhosar", "name_devanagari": "ग्याल्पो ल्होसार", "name_english": "Gyalpo Lhosar", "category": "buddha", "date": "2027-03-09" }
+]

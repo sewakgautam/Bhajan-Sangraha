@@ -1,0 +1,72 @@
+{
+  "@@locale": "ne",
+  "appTitle": "भजन संग्रह",
+  "noBhajansYet": "अहिलेसम्म कुनै भजन छैन।",
+  "allCategory": "सबै",
+  "searchHint": "भजन खोज्नुहोस्...",
+  "noResults": "कुनै नतिजा फेला परेन।",
+  "viewModeDevanagari": "देवनागरी",
+  "viewModeRoman": "रोमन",
+  "viewModeBoth": "दुवै",
+  "shareTooltip": "साझा गर्नुहोस्",
+  "bookmarkAdd": "बुकमार्क गर्नुहोस्",
+  "bookmarkRemove": "बुकमार्क हटाउनुहोस्",
+  "bookmarkAdded": "बुकमार्क थपियो",
+  "bookmarkRemoved": "बुकमार्क हटाइयो",
+  "sourceLabel": "स्रोत",
+  "sourceBook": "पुस्तक:",
+  "sourceAuthor": "लेखक:",
+  "sourcePublisher": "प्रकाशक:",
+  "sourceYear": "वर्ष:",
+  "sourcePage": "पृष्ठ:",
+  "signInToSync": "आफ्ना बुकमार्कहरू सिंक गर्न साइन इन गर्नुहोस्",
+  "signInToViewBookmarks": "बुकमार्कहरू हेर्न र सिंक गर्न साइन इन गर्नुहोस्",
+  "signIn": "साइन इन गर्नुहोस्",
+  "signOut": "साइन आउट गर्नुहोस्",
+  "notSignedIn": "साइन इन गरिएको छैन",
+  "signOutConfirm": "तपाईंका बुकमार्कहरू यस डिभाइसमा रहनेछन् तर अब सिंक हुनेछैनन्। जारी राख्ने?",
+  "cancel": "रद्द गर्नुहोस्",
+  "signedInAndSynced": "{name} को रूपमा साइन इन गरियो। बुकमार्कहरू सिंक भयो।",
+  "@signedInAndSynced": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "signInFailed": "साइन इन असफल भयो। फेरि प्रयास गर्नुहोस्।",
+  "noBookmarksYet": "अहिलेसम्म कुनै बुकमार्क छैन। यहाँ सेभ गर्न कुनै पनि भजनमा ⭐ थिच्नुहोस्।",
+  "navHome": "गृह",
+  "navBookmarks": "बुकमार्क",
+  "navQuotes": "गीता",
+  "navSettings": "सेटिङ",
+  "quotesScreenTitle": "गीता ज्ञान",
+  "noQuotesYet": "अहिलेसम्म कुनै वचन छैन।",
+  "copyTooltip": "कपी गर्नुहोस्",
+  "quoteCopied": "{chapterVerse} कपी भयो",
+  "@quoteCopied": {
+    "placeholders": {
+      "chapterVerse": {"type": "String"}
+    }
+  },
+  "fontSize": "फन्ट साइज",
+  "theme": "थिम",
+  "themeLight": "उज्यालो",
+  "themeDark": "अँध्यारो",
+  "themeSystem": "प्रणाली",
+  "about": "हाम्रो बारेमा",
+  "language": "भाषा",
+  "syncFailedMessage": "भजनहरू लोड गर्न सकिएन। आफ्नो इन्टरनेट जडान जाँच्नुहोस्।",
+  "retry": "फेरि प्रयास गर्नुहोस्",
+  "festivalGreeting": "{festivalName} को शुभकामना!",
+  "@festivalGreeting": {
+    "placeholders": {
+      "festivalName": {"type": "String"}
+    }
+  },
+  "festivalCta": "{categoryName} भजनहरू हेर्न ट्याप गर्नुहोस्",
+  "@festivalCta": {
+    "placeholders": {
+      "categoryName": {"type": "String"}
+    }
+  },
+  "watchOnYoutube": "युट्युबमा हेर्नुहोस्"
+}
