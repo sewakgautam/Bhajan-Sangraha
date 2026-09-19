@@ -186,47 +186,13 @@ class _BhajanDetailScreenState extends State<BhajanDetailScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        l10n.fontSize,
-                        style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                              color: colorScheme.onSurfaceVariant,
-                              fontWeight: FontWeight.w600,
-                            ),
-                      ),
-                      FontControls(
-                        fontSize: _fontSize,
-                        onChanged: _setFontSize,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  SegmentedButton<ViewMode>(
-                    showSelectedIcon: false,
-                    expandedInsets: EdgeInsets.zero,
-                    style: SegmentedButton.styleFrom(
-                      minimumSize: const Size(0, 44),
-                      backgroundColor: Theme.of(context).colorScheme.surfaceContainerHigh,
-                      foregroundColor: Theme.of(context).colorScheme.onSurfaceVariant,
-                      selectedBackgroundColor: Theme.of(context).colorScheme.primary,
-                      selectedForegroundColor: Theme.of(context).colorScheme.onPrimary,
-                      side: BorderSide.none,
-                    ),
-                    segments: [
-                      ButtonSegment(
-                        value: ViewMode.devanagari,
-                        label: Text(l10n.viewModeDevanagari),
-                      ),
-                      ButtonSegment(value: ViewMode.roman, label: Text(l10n.viewModeRoman)),
-                      ButtonSegment(value: ViewMode.both, label: Text(l10n.viewModeBoth)),
-                    ],
-                    selected: {_viewMode},
-                    onSelectionChanged: (selection) => _setViewMode(selection.first),
+                  _ViewModeDropdown(value: _viewMode, onChanged: _setViewMode),
+                  FontControls(
+                    fontSize: _fontSize,
+                    onChanged: _setFontSize,
                   ),
                 ],
               ),
@@ -371,6 +337,62 @@ class _BhajanDetailScreenState extends State<BhajanDetailScreen> {
         ),
         meaningSection,
       ],
+    );
+  }
+}
+
+/// Compact pill that opens a menu to switch between Devanagari, Roman, and
+/// both — replaces the old full-width [SegmentedButton] row so it can sit
+/// beside [FontControls] in one header row instead of its own, leaving more
+/// vertical room for the lyrics below.
+class _ViewModeDropdown extends StatelessWidget {
+  const _ViewModeDropdown({required this.value, required this.onChanged});
+
+  final ViewMode value;
+  final ValueChanged<ViewMode> onChanged;
+
+  String _label(AppLocalizations l10n, ViewMode mode) => switch (mode) {
+        ViewMode.devanagari => l10n.viewModeDevanagari,
+        ViewMode.roman => l10n.viewModeRoman,
+        ViewMode.both => l10n.viewModeBoth,
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return PopupMenuButton<ViewMode>(
+      initialValue: value,
+      onSelected: onChanged,
+      offset: const Offset(0, 46),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      itemBuilder: (context) => ViewMode.values
+          .map((mode) => PopupMenuItem(value: mode, child: Text(_label(l10n, mode))))
+          .toList(),
+      child: Container(
+        height: 40,
+        padding: const EdgeInsets.symmetric(horizontal: 14),
+        decoration: BoxDecoration(
+          color: colorScheme.surfaceContainerHigh,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: colorScheme.outlineVariant.withValues(alpha: 0.5)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              _label(l10n, value),
+              style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    color: colorScheme.primary,
+                  ),
+            ),
+            const SizedBox(width: 4),
+            Icon(Icons.expand_more, size: 18, color: colorScheme.primary),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -32,7 +32,7 @@ class AttributionBlock extends StatelessWidget {
         );
 
     return Container(
-      margin: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+      margin: const EdgeInsets.fromLTRB(16, 12, 16, 4),
       padding: const EdgeInsets.only(top: 12),
       decoration: BoxDecoration(
         border: Border(top: BorderSide(color: colorScheme.outlineVariant.withValues(alpha: 0.5))),
